@@ -1,0 +1,201 @@
+//Variables
+
+$back-img:#eee;
+$user-color: #333;
+$back-body-color: #f2ecbd;
+$edit-color: #f25f5c;
+$delete-color:#FDEAEA;
+$bada55: #6a7741;
+$border-color: red;
+$margin10: 10px;
+
+$borderTeal: 5px solid #3acfd5;
+$borderBlue: 5px solid #3a4ed5;
+
+body {
+	background: $back-body-color;
+	color: #323232;
+	margin-left: 50px;
+	text-align: center;
+	font-family: Helvetica,;
+}
+
+.add {
+	form {
+		width: 500px;
+		margin: 0 auto;
+	}
+	p {
+		display: inline-block;
+	}
+	.email,
+	.age {
+		margin-right: 30px;
+	}
+
+	.gender {
+		margin-right: 58px;
+	}
+
+	input[type="submit"] {
+		width: 35%;
+		margin: 10px;
+		padding: 4px;
+	}
+
+	input[type="number"] {
+		margin-left: 12px;
+    	width: 156.8px;
+	}
+}
+
+.block {
+	display: block;
+}
+
+ul {
+	padding: 0;
+}
+
+#list {
+	li {
+
+		list-style: none;
+		display: inline-block;
+		margin: 0 auto;
+		width: 25%;
+		margin-bottom: 12px;
+
+		.user-flex-container {
+			display: flex;
+			text-align: left;
+		}
+
+	
+
+		.user-text-container {
+			form {
+				display: inline;
+				input[type="submit"] {
+					cursor: pointer;
+
+					border: none;
+					background: $back-body-color;
+
+					
+					padding: $margin10;
+					margin-top: $margin10;
+					transition: .7s all;
+					border-radius: $margin10;
+					color: #000;
+
+					border-top: $borderTeal;
+					border-left: $borderTeal;
+					border-right: $borderBlue;
+					border-bottom: $borderBlue;
+
+					
+
+					&:hover {
+						border-top: $borderBlue;
+						border-left: $borderBlue;
+						border-right: $borderTeal;
+						border-bottom: $borderTeal;
+					}
+				}
+			}
+			.edit {
+				margin-right: 1.8rem;
+			}
+			margin-left: $margin10;
+			margin-bottom: 25px;
+
+			p {
+				margin: 0;
+				font-size: 1rem;
+				color: $user-color;
+			}
+		}
+		.user-container {
+			img {
+				width: 80px;
+				height: 80px;
+				background-color: $back-img;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#edit {
+	width: 500px;
+	margin: 50px auto;
+
+	p {
+		display: inline-block;
+	}
+	.email {
+		margin-right: 33px;
+	}
+	.age {
+		margin-right: 44px;
+	}
+	.gender {
+		margin-right: 20px
+	}
+
+	input[type="submit"] {
+		width: 35%;
+		margin: 10px;
+		padding: 4px;
+		border: 1px solid $border-color;
+		background-color: $back-body-color;
+		cursor: pointer;
+		transition: .7s all;
+		
+		border-top: $borderTeal;
+		border-left: $borderTeal;
+		border-right: $borderBlue;
+		border-bottom: $borderBlue;
+		
+		&:hover {
+			border-top: $borderBlue;
+			border-left: $borderBlue;
+			border-right: $borderTeal;
+			border-bottom: $borderTeal;
+		}
+
+
+	}
+
+	input[type="number"] {
+		width: 159px;
+	}
+
+	a {
+		color: $bada55;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (max-width: 1110px) {
+	#list {
+		li {
+			width: 45%;
+		}
+	}
+}
+
+@media (max-width: 630px) {
+	#list {
+		li {
+			width: 50%;
+		}
+	}
+}

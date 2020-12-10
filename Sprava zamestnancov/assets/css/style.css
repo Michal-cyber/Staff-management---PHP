@@ -1,0 +1,155 @@
+body {
+  background: #f2ecbd;
+  color: #323232;
+  margin-left: 50px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.add form {
+  width: 500px;
+  margin: 0 auto;
+}
+.add p {
+  display: inline-block;
+}
+.add .email,
+.add .age {
+  margin-right: 30px;
+}
+.add .gender {
+  margin-right: 58px;
+}
+.add input[type=submit] {
+  width: 35%;
+  margin: 10px;
+  padding: 4px;
+}
+.add input[type=number] {
+  margin-left: 12px;
+  width: 156.8px;
+}
+
+.block {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+#list li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+  width: 25%;
+  margin-bottom: 12px;
+}
+#list li .user-flex-container {
+  display: flex;
+  text-align: left;
+}
+#list li .user-text-container {
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+#list li .user-text-container form {
+  display: inline;
+}
+#list li .user-text-container form input[type=submit] {
+  cursor: pointer;
+  border: none;
+  background: #f2ecbd;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.7s all;
+  border-radius: 10px;
+  color: #000;
+  border-top: 5px solid #3acfd5;
+  border-left: 5px solid #3acfd5;
+  border-right: 5px solid #3a4ed5;
+  border-bottom: 5px solid #3a4ed5;
+}
+#list li .user-text-container form input[type=submit]:hover {
+  border-top: 5px solid #3a4ed5;
+  border-left: 5px solid #3a4ed5;
+  border-right: 5px solid #3acfd5;
+  border-bottom: 5px solid #3acfd5;
+}
+#list li .user-text-container .edit {
+  margin-right: 1.8rem;
+}
+#list li .user-text-container p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+#list li .user-container img {
+  width: 80px;
+  height: 80px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#edit {
+  width: 500px;
+  margin: 50px auto;
+}
+#edit p {
+  display: inline-block;
+}
+#edit .email {
+  margin-right: 33px;
+}
+#edit .age {
+  margin-right: 44px;
+}
+#edit .gender {
+  margin-right: 20px;
+}
+#edit input[type=submit] {
+  width: 35%;
+  margin: 10px;
+  padding: 4px;
+  border: 1px solid red;
+  background-color: #f2ecbd;
+  cursor: pointer;
+  transition: 0.7s all;
+  border-top: 5px solid #3acfd5;
+  border-left: 5px solid #3acfd5;
+  border-right: 5px solid #3a4ed5;
+  border-bottom: 5px solid #3a4ed5;
+}
+#edit input[type=submit]:hover {
+  border-top: 5px solid #3a4ed5;
+  border-left: 5px solid #3a4ed5;
+  border-right: 5px solid #3acfd5;
+  border-bottom: 5px solid #3acfd5;
+}
+#edit input[type=number] {
+  width: 159px;
+}
+#edit a {
+  color: #6a7741;
+}
+#edit a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1110px) {
+  #list li {
+    width: 45%;
+  }
+}
+@media (max-width: 630px) {
+  #list li {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

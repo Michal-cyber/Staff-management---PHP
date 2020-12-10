@@ -1,0 +1,49 @@
+If we want add attribut in XML file -> get this code and add to where you wanna. For example in addXml.php 
+(we can use condition to where we want to add element.) or without condition and we add this everywhere.
+
+$create_el_in_Xml = new Employees();
+$create_el_in_Xml->addXml(new Employee("position"));
+
+$add_where = $xml->getElementsByTagName("employee");
+
+foreach($add_where as $element) {
+    foreach($create_el_in_Xml->getXml() as $creating) {
+	if($element->...) {
+        $child = $xml-> createElement( $creating) ->getFirst_name(), 'vyvojar' );
+        $element ->appendChild($child) 
+	}
+    }
+}
+
+
+update Employee 
+protected $position
+constructor : __construct(..... $position) $this->position = $position (add getters and setters)
+create another value in assets/header.php in foreach
+$employees->addEmployee(....,$item->position)
+
+they must be update on screen too, so we need to create another value in index.php 
+$item->getPosition()
+add new input type='hidden' name: 'position', value =' <?= $item->position ?>'>
+
+in partials/AddForm.php
+<p>Position: </p> <input type="text" name="position">
+
+_inc/addXml.php
+upgrade employees -> addEmployee(..., $POST['position']);
+upgrade employees ->addXml(....,"position");
+
+in foreachTags: $position = $parent->appendChild($xml -> createElement($user->getPositon(), $item->getPosition() ) );
+
+in Edit.php
+$position = $_Post['position'];
+
+section #edit,
+ <p>Position: </p> <input type="text" name="position" value= "<?= $position ?>">
+
+_inc/editXml.php
+upgrade employees -> addEmployee(..., $POST['position']);
+
+in foreachTag: $position = $parent->appendChild($xml -> createElement($user->getPositon(), $item->getPosition() ) );
+
+
